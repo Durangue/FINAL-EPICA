@@ -1,0 +1,96 @@
+:root {
+    --color-primario: #1877f2;
+    --color-segundario: #242526;
+    --color-fondo: #f0f2f5;
+    --color-texto: #333333;
+    --color-borde: #e4e6eb; 
+}
+
+/*  generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* encabezado */
+header {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* formularios */
+#post-form {
+    padding: 20px;
+}
+
+#post-form label {
+    font-weight: bold;
+}
+
+#post-form input[type="text"],
+#post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+}
+
+#post-form button {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#post-form button:hover {
+    background-color: #1153e4;
+}
+
+/* tarjetas */
+.post-card {
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-card .card-text {
+    font-size: 1.2rem;
+    color: var(--color-texto);
+}
+
+.post-card .post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
